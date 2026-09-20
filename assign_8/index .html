@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car & Heavy Vehicle Insurance Guide</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #123c69;
+      color: white;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: #0b2d4d;
+      padding: 14px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #123c69;
+      margin-bottom: 15px;
+      font-size: 27px;
+    }
+
+    h3 {
+      color: #185a8d;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 12px;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .vehicle-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+      margin-top: 20px;
+    }
+
+    .vehicle {
+      border: 1px solid #d7e0ea;
+      border-radius: 10px;
+      padding: 22px;
+      background: #f9fbfd;
+    }
+
+    .vehicle h3 {
+      font-size: 21px;
+    }
+
+    .highlight {
+      background: #e8f3ff;
+      border-left: 5px solid #1976d2;
+      padding: 16px;
+      margin-top: 18px;
+      border-radius: 4px;
+    }
+
+    .warning {
+      background: #fff6df;
+      border-left: 5px solid #e0a000;
+      padding: 16px;
+      margin-top: 18px;
+      border-radius: 4px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 18px;
+    }
+
+    th, td {
+      border: 1px solid #d5dce3;
+      padding: 13px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #e8f3ff;
+      color: #123c69;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #123c69;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #123c69;
+      color: white;
+      text-align: center;
+      padding: 24px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      table {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Car & Heavy Vehicle Insurance</h1>
+    <p>A simple guide to motor insurance, coverage, claims and important documents</p>
+  </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#car">Car Insurance</a>
+    <a href="#heavy">Heavy Vehicles</a>
+    <a href="#coverage">Coverage</a>
+    <a href="#claims">Claims</a>
+    <a href="#documents">Documents</a>
+  </nav>
+
+  <main class="container">
+
+    <section id="overview" class="card">
+      <h2>Insurance Overview</h2>
+      <p>
+        Motor vehicle insurance provides financial protection against certain
+        losses, damages and third-party liabilities arising from the use of a
+        vehicle. The exact protection depends on the type of policy, vehicle,
+        insurer, add-ons and policy conditions.
+      </p>
+
+      <div class="highlight">
+        <strong>Important:</strong> Third-party motor insurance is generally
+        mandatory for vehicles used on public roads in India. Always check the
+        latest applicable regulations and your policy wording.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Vehicle Insurance Categories</h2>
+
+      <div class="vehicle-grid">
+
+        <div id="car" class="vehicle">
+          <span class="badge">Private / Personal Use</span>
+          <h3>Car Insurance</h3>
+          <p>
+            Car insurance can protect private cars against covered own-damage
+            risks and third-party liabilities.
+          </p>
+          <ul>
+            <li>Accident damage</li>
+            <li>Theft</li>
+            <li>Fire and specified natural events</li>
+            <li>Third-party liability</li>
+            <li>Optional add-on protection</li>
+          </ul>
+        </div>
+
+        <div id="heavy" class="vehicle">
+          <span class="badge">Commercial Vehicle</span>
+          <h3>Heavy Load Vehicle Insurance</h3>
+          <p>
+            Commercial vehicle insurance is designed for vehicles used for
+            transporting goods or carrying heavy loads, subject to the
+            vehicle's registration and permitted use.
+          </p>
+          <ul>
+            <li>Trucks</li>
+            <li>Heavy goods vehicles</li>
+            <li>Multi-axle vehicles</li>
+            <li>Goods carriers</li>
+            <li>Other eligible commercial vehicles</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="coverage" class="card">
+      <h2>Types of Motor Insurance</h2>
+
+      <div class="vehicle-grid">
+        <div class="vehicle">
+          <h3>Third-Party Liability</h3>
+          <p>
+            Covers eligible legal liabilities arising from injury, death or
+            property damage caused to third parties, subject to applicable
+            laws, limits and policy terms.
+          </p>
+        </div>
+
+        <div class="vehicle">
+          <h3>Comprehensive / Package Policy</h3>
+          <p>
+            Generally combines third-party liability with own-damage protection
+            for covered events such as accidents, theft, fire and specified
+            natural or man-made events.
+          </p>
+        </div>
+
+        <div class="vehicle">
+          <h3>Own Damage Cover</h3>
+          <p>
+            Provides protection for the insured vehicle against covered
+            accidental damage and other specified risks. It is generally used
+            together with mandatory third-party cover.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Common Coverage for Cars</h2>
+      <ul>
+        <li>Accidental damage to the insured car</li>
+        <li>Theft of the vehicle</li>
+        <li>Fire and explosion, according to policy terms</li>
+        <li>Specified natural calamities</li>
+        <li>Specified man-made events</li>
+        <li>Third-party liability</li>
+        <li>Optional add-ons such as zero depreciation and roadside assistance, if available</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Common Coverage for Heavy Load Vehicles</h2>
+      <ul>
+        <li>Accidental damage to the commercial vehicle</li>
+        <li>Theft of the insured vehicle</li>
+        <li>Fire and specified natural events</li>
+        <li>Third-party liability</li>
+        <li>Coverage options based on commercial vehicle usage</li>
+        <li>Selected add-ons available from the insurer</li>
+        <li>Protection subject to declared vehicle use, permits and policy conditions</li>
+      </ul>
+
+      <div class="warning">
+        <strong>Commercial vehicle note:</strong>
+        Heavy vehicles may require valid registration, permits, fitness
+        certificates, appropriate driving licences and other legally required
+        documents. Insurance coverage can be affected when policy or legal
+        requirements are not followed.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Car vs Heavy Vehicle Insurance</h2>
+
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Car Insurance</th>
+          <th>Heavy Load Vehicle Insurance</th>
+        </tr>
+        <tr>
+          <td>Typical Use</td>
+          <td>Personal/private transportation</td>
+          <td>Commercial goods transportation</td>
+        </tr>
+        <tr>
+          <td>Vehicle Examples</td>
+          <td>Hatchback, sedan, SUV</td>
+          <td>Truck, goods carrier, multi-axle vehicle</td>
+        </tr>
+        <tr>
+          <td>Third-Party Cover</td>
+          <td>Generally mandatory for road use</td>
+          <td>Generally mandatory for road use</td>
+        </tr>
+        <tr>
+          <td>Premium Factors</td>
+          <td>Vehicle value, engine, location, claims, coverage and add-ons</td>
+          <td>Vehicle type, carrying capacity, usage, location, claims, coverage and other risk factors</td>
+        </tr>
+        <tr>
+          <td>Special Requirements</td>
+          <td>Valid registration and driving licence</td>
+          <td>May include permits, fitness certificate and commercial driving requirements</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>What Can Affect Your Premium?</h2>
+      <ul>
+        <li>Vehicle make, model and age</li>
+        <li>Insured Declared Value (IDV), where applicable</li>
+        <li>Engine capacity and vehicle specifications</li>
+        <li>Vehicle registration and usage location</li>
+        <li>Type of vehicle and its intended use</li>
+        <li>Previous claim history and eligible No Claim Bonus</li>
+        <li>Selected coverage and optional add-ons</li>
+        <li>For commercial vehicles, usage, carrying capacity and other risk factors</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Common Exclusions</h2>
+      <ul>
+        <li>Normal wear and tear</li>
+        <li>Mechanical or electrical breakdowns unless specifically covered</li>
+        <li>Driving without a valid licence</li>
+        <li>Use outside the permitted policy conditions</li>
+        <li>Driving under the influence of alcohol or prohibited substances, subject to applicable law and policy terms</li>
+        <li>Consequential losses that are not covered by the policy</li>
+      </ul>
+    </section>
+
+    <section id="claims" class="card">
+      <h2>How to Make an Insurance Claim</h2>
+      <ol>
+        <li>Inform the insurer promptly after an accident, theft or other covered incident.</li>
+        <li>Contact the police when required, especially for theft or serious accidents.</li>
+        <li>Provide the claim form and required vehicle and incident details.</li>
+        <li>Submit photographs, reports and other supporting evidence when requested.</li>
+        <li>Allow the insurer's survey/inspection process where applicable.</li>
+        <li>Use the insurer's approved repair or claim process.</li>
+        <li>Keep all repair estimates, invoices and receipts.</li>
+      </ol>
+    </section>
+
+    <section id="documents" class="card">
+      <h2>Commonly Required Documents</h2>
+
+      <div class="vehicle-grid">
+        <div class="vehicle">
+          <h3>For Cars</h3>
+          <ul>
+            <li>Insurance policy details</li>
+            <li>Registration Certificate (RC)</li>
+            <li>Valid driving licence</li>
+            <li>Claim form</li>
+            <li>Identity/address proof, where required</li>
+            <li>FIR or police report, where applicable</li>
+            <li>Repair estimates and bills</li>
+          </ul>
+        </div>
+
+        <div class="vehicle">
+          <h3>For Heavy Vehicles</h3>
+          <ul>
+            <li>Insurance policy details</li>
+            <li>Registration Certificate (RC)</li>
+            <li>Valid commercial driving licence</li>
+            <li>Permit, where applicable</li>
+            <li>Fitness certificate, where applicable</li>
+            <li>Claim form</li>
+            <li>FIR/police report, where applicable</li>
+            <li>Repair estimates and invoices</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Tips Before Buying Insurance</h2>
+      <ul>
+        <li>Compare the coverage, not just the premium.</li>
+        <li>Check the policy's exclusions, deductibles and limits.</li>
+        <li>Review the Insured Declared Value where applicable.</li>
+        <li>Choose add-ons based on your actual requirements.</li>
+        <li>For commercial vehicles, ensure the policy matches the permitted vehicle use.</li>
+        <li>Keep registration, licence, permit and other required documents valid.</li>
+        <li>Read the policy wording before purchasing or renewing.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Car & Heavy Vehicle Insurance Guide</p>
+    <p>For general informational purposes only. Policy terms and legal requirements may vary.</p>
+  </footer>
+
+</body>
+</html>
