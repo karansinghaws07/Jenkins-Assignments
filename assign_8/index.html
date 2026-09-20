@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bike Insurance Details</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f7fb;
+      color: #222;
+    }
+    header {
+      background: #0d47a1;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 { margin-bottom: 10px; }
+    header p { opacity: 0.9; }
+
+    nav {
+      background: #083579;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #0d47a1;
+      margin-bottom: 15px;
+    }
+
+    .plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .plan {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .plan h3 {
+      color: #1565c0;
+      margin-bottom: 10px;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+
+    .highlight {
+      background: #e3f2fd;
+      border-left: 5px solid #1976d2;
+      padding: 15px;
+      margin-top: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #e3f2fd;
+      color: #0d47a1;
+    }
+
+    footer {
+      text-align: center;
+      background: #0d47a1;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bike Insurance</h1>
+    <p>Understand your two-wheeler insurance options, coverage and benefits</p>
+  </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#plans">Plans</a>
+    <a href="#coverage">Coverage</a>
+    <a href="#claims">Claims</a>
+  </nav>
+
+  <main class="container">
+
+    <section id="overview" class="card">
+      <h2>What is Bike Insurance?</h2>
+      <p>
+        Bike insurance is a policy that provides financial protection against
+        losses or damages involving your motorcycle or scooter. Depending on
+        the policy, it can also provide protection against third-party
+        liabilities.
+      </p>
+
+      <div class="highlight">
+        <strong>Important:</strong> Third-party motor insurance is generally
+        required by law for vehicles used on public roads in India. Check your
+        policy terms and applicable regulations for the latest requirements.
+      </div>
+    </section>
+
+    <section id="plans" class="card">
+      <h2>Types of Bike Insurance</h2>
+
+      <div class="plans">
+        <div class="plan">
+          <h3>Third-Party Insurance</h3>
+          <p>Provides cover for legal liability arising from injury, death or property damage caused to a third party, subject to policy terms and applicable limits.</p>
+        </div>
+
+        <div class="plan">
+          <h3>Comprehensive Insurance</h3>
+          <p>Combines third-party liability cover with protection for your own bike against covered risks such as accidents, theft, fire and natural calamities.</p>
+        </div>
+
+        <div class="plan">
+          <h3>Own Damage Cover</h3>
+          <p>Provides protection for your bike against covered accidental damage and other specified risks. It is generally purchased along with mandatory third-party cover.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="coverage" class="card">
+      <h2>Common Coverage</h2>
+      <ul>
+        <li>Accidental damage to the insured bike</li>
+        <li>Theft of the insured bike</li>
+        <li>Damage caused by fire or explosion</li>
+        <li>Damage caused by certain natural or man-made events</li>
+        <li>Third-party liability, subject to applicable terms</li>
+        <li>Optional add-ons such as zero depreciation, roadside assistance and engine protection, depending on the insurer and policy</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Common Exclusions</h2>
+      <ul>
+        <li>Normal wear and tear</li>
+        <li>Driving without a valid licence</li>
+        <li>Use of the bike in violation of policy conditions</li>
+        <li>Damage caused while driving under the influence of alcohol or prohibited substances, subject to applicable law and policy terms</li>
+        <li>Mechanical or electrical breakdowns unless specifically covered</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>What Affects Your Premium?</h2>
+      <table>
+        <tr>
+          <th>Factor</th>
+          <th>Impact</th>
+        </tr>
+        <tr>
+          <td>Bike Model & Engine Capacity</td>
+          <td>Higher-value or higher-capacity bikes may have different premiums.</td>
+        </tr>
+        <tr>
+          <td>Bike Age</td>
+          <td>The age and depreciation of the vehicle can affect the premium.</td>
+        </tr>
+        <tr>
+          <td>Location</td>
+          <td>Risk levels and applicable insurance rates can vary by location.</td>
+        </tr>
+        <tr>
+          <td>Claim History</td>
+          <td>Eligible claim-free years may affect your No Claim Bonus.</td>
+        </tr>
+        <tr>
+          <td>Add-ons</td>
+          <td>Optional add-ons generally increase the premium.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="claims" class="card">
+      <h2>How to Make a Bike Insurance Claim</h2>
+      <ol>
+        <li>Inform your insurance company as soon as possible after the incident.</li>
+        <li>Register a police complaint where required, especially in theft or major accident cases.</li>
+        <li>Provide the requested documents and incident details.</li>
+        <li>Allow the insurer's inspection or survey process when applicable.</li>
+        <li>Get repairs done according to the insurer's claim process and policy conditions.</li>
+        <li>Keep invoices, receipts and other supporting documents safely.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Documents Commonly Required</h2>
+      <ul>
+        <li>Bike insurance policy details</li>
+        <li>Vehicle Registration Certificate (RC)</li>
+        <li>Valid driving licence</li>
+        <li>Claim form</li>
+        <li>Identity and address proof, where required</li>
+        <li>FIR/police report for applicable cases</li>
+        <li>Repair estimates and bills, where applicable</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bike Insurance Guide | For informational purposes only</p>
+  </footer>
+
+</body>
+</html>
