@@ -1,11 +1,14 @@
 pipeline{
     agent {
         label "slave-1"
+		customworkspace "/mnt/pipeline"
     }
     stages{
         stage("seq-1"){
 				steps{
+					rm -rf*
 					echo "this stage1 of seq-1"
+					sh "mkdir trial_job
 					sleep 10
 				}
 		}
