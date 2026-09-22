@@ -1,0 +1,50 @@
+pipeline{
+    agent {
+        label "slave-1"
+    }
+    stages{
+        stage("seq-1"){
+				steps{
+					echo "this stage1 of seq-1"
+					sleep 10
+				}
+		}
+			
+		
+		stage("parallel -stages"){
+			parallel {
+				stage("P-1"){
+					steps {
+						echo "this is parallel stage P1"
+						sleep 10
+						}
+					}		
+			
+				stage("P-2"){
+					steps{
+						echo "this is parallel stage P-2"
+						sleep 10
+						}	
+				}
+			
+				stage("P-3"){
+					steps{
+						echo "this is parallel stage P-3"
+						sleep 10
+					}
+			
+				}
+			}
+		}	
+    
+		
+		stage("seq-2") {
+				steps{
+					echo "this is seq-2 "
+					}
+				}
+			
+        
+    
+	}
+}
